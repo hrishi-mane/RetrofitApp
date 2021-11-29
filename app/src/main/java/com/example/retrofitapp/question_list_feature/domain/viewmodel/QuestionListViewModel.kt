@@ -4,11 +4,15 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.retrofitapp.question_list_feature.data.repository.QuestionRepository
 import com.example.retrofitapp.question_list_feature.domain.models.Questions
+import dagger.hilt.android.lifecycle.HiltViewModel
 import retrofit2.Call
 import retrofit2.Response
+import javax.inject.Inject
 
-
-class QuestionListViewModel constructor(
+@HiltViewModel
+class QuestionListViewModel
+@Inject
+constructor(
     private val questionRepository: QuestionRepository
 ) : ViewModel() {
 

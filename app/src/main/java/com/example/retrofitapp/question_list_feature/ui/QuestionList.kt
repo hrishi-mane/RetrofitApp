@@ -11,16 +11,19 @@ import com.example.retrofitapp.question_list_feature.domain.viewmodel.QuestionLi
 class QuestionList : Fragment(R.layout.fragment_question_list) {
     private val questionListViewModel: QuestionListViewModel by viewModels()
     private lateinit var fragmentQuestionListBinding: FragmentQuestionListBinding
+    private var questionListAdapter = QuestionListAdapter()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         fragmentQuestionListBinding = FragmentQuestionListBinding.bind(view)
+
         val questionList = fragmentQuestionListBinding.questionList
+        questionList.adapter = questionListAdapter
 
         questionListViewModel.getQuestions()
 
         questionListViewModel.questions.observe(viewLifecycleOwner, { questions ->
-            questions.items
+            questionListAdapter.questionLists = questions.items
         })
     }
 }
