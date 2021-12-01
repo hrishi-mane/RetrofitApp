@@ -1,4 +1,4 @@
-## A REST app that consumes and displays the data from the Remote Api
+## An android application that displays the data from the Remote REST Api using Retrofit
 
 ## The app is implemented using:
 1. Kotlin language
