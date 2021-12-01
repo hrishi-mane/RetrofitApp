@@ -1,4 +1,5 @@
-## An android application that displays the data from the Remote REST Api using Retrofit
+## Stack Overflow Clone
+ - An android app that displays a searchable list of programming related questions and answers from a REST api.
 
 ## The app is implemented using:
 1. Kotlin language
