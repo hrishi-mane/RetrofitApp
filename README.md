@@ -1,4 +1,4 @@
-## Stack Overflow Clone
+## Stack Overflow
  - An android app that displays a searchable list of programming related questions and answers from a REST api.
 
 ## The app is implemented using:
