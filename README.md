@@ -1,4 +1,4 @@
-## A REST app that consumes and displays the data from the Remote APi
+## A REST app that consumes and displays the data from the Remote Api
 
 ## The app is implemented using:
 1. Kotlin language
